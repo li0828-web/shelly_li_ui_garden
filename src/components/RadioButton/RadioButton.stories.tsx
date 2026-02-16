@@ -1,4 +1,4 @@
-﻿import { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { RadioButton } from './RadioButton';
 
 const meta: Meta<typeof RadioButton> = {
@@ -7,7 +7,10 @@ const meta: Meta<typeof RadioButton> = {
   tags: ['autodocs'],
   argTypes: {
     disabled: { control: 'boolean' },
-    children: { control: 'text' }
+    children: { control: 'text' },
+    name: { control: 'text' },
+    value: { control: 'text' },
+    checked: { control: 'boolean' }
   },
 };
 
@@ -16,14 +19,20 @@ type Story = StoryObj<typeof RadioButton>;
 
 export const Default: Story = {
   args: {
-    children: 'Default RadioButton',
+    children: 'Option 1',
+    name: 'radio-group',
+    value: 'option1',
+    checked: false,
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
   args: {
-    children: 'Disabled RadioButton',
+    children: 'Disabled option',
+    name: 'radio-group',
+    value: 'option1',
+    checked: false,
     disabled: true,
   },
 };

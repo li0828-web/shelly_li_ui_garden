@@ -1,4 +1,4 @@
-﻿import { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { Img } from './Img';
 
 const meta: Meta<typeof Img> = {
@@ -7,7 +7,8 @@ const meta: Meta<typeof Img> = {
   tags: ['autodocs'],
   argTypes: {
     disabled: { control: 'boolean' },
-    children: { control: 'text' }
+    src: { control: 'text' },
+    alt: { control: 'text' }
   },
 };
 
@@ -16,14 +17,16 @@ type Story = StoryObj<typeof Img>;
 
 export const Default: Story = {
   args: {
-    children: 'Default Img',
+    src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4',
+    alt: 'Beautiful landscape',
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
   args: {
-    children: 'Disabled Img',
+    src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4',
+    alt: 'Beautiful landscape',
     disabled: true,
   },
 };

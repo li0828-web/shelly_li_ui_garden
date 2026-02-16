@@ -1,24 +1,26 @@
-﻿import React from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { ImgProps } from './Img.types';
 
-const StyledImg = styled.div<{ disabled?: boolean }>
-  color: ${props => props.disabled ? '#999' : '#333'};
-  cursor: ${props => props.disabled ? 'not-allowed' : 'default'};
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+const StyledImg = styled.img<{ disabled?: boolean }>`
+  max-width: 100%;
+  height: auto;
   opacity: ${props => props.disabled ? 0.6 : 1};
-;
+  cursor: ${props => props.disabled ? 'not-allowed' : 'default'};
+`;
 
 export const Img: React.FC<ImgProps> = ({ 
-  children, 
+  src, 
+  alt, 
   disabled = false,
   ...props 
 }) => {
   return (
-    <StyledImg disabled={disabled} {...props}>
-      {children}
-    </StyledImg>
+    <StyledImg 
+      src={src || 'https://via.placeholder.com/300'} 
+      alt={alt || 'Placeholder image'} 
+      disabled={disabled} 
+      {...props} 
+    />
   );
 };

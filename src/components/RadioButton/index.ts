@@ -1,3 +1,2 @@
-// src/components/Button/index.ts
-export { Button } from "./Button";
-export type { ButtonProps } from "./Button.types";
+export { RadioButton } from "./RadioButton";
+export type { RadioButtonProps } from "./RadioButton.types";

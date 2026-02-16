@@ -1,4 +1,4 @@
-﻿import { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { TableHeader } from './TableHeader';
 
 const meta: Meta<typeof TableHeader> = {
@@ -16,14 +16,14 @@ type Story = StoryObj<typeof TableHeader>;
 
 export const Default: Story = {
   args: {
-    children: 'Default TableHeader',
+    children: 'Header content',
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
   args: {
-    children: 'Disabled TableHeader',
+    children: 'Disabled header',
     disabled: true,
   },
 };

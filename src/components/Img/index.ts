@@ -1,3 +1,2 @@
-// src/components/Button/index.ts
-export { Button } from "./Button";
-export type { ButtonProps } from "./Button.types";
+export { Img } from "./Img";
+export type { ImgProps } from "./Img.types";

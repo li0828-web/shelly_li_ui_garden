@@ -1,3 +1,2 @@
-// src/components/Button/index.ts
-export { Button } from "./Button";
-export type { ButtonProps } from "./Button.types";
+export { TableFooter } from "./TableFooter";
+export type { TableFooterProps } from "./TableFooter.types";

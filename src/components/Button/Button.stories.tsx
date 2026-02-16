@@ -1,5 +1,4 @@
-// src/components/Button/Button.stories.tsx
-import { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { Button } from "./Button";
 import { ButtonProps } from "./Button.types";
 

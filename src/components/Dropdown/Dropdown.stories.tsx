@@ -1,4 +1,5 @@
-﻿import { Meta, StoryObj } from '@storybook/react';
+import React from 'react';
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { Dropdown } from './Dropdown';
 
 const meta: Meta<typeof Dropdown> = {
@@ -7,7 +8,6 @@ const meta: Meta<typeof Dropdown> = {
   tags: ['autodocs'],
   argTypes: {
     disabled: { control: 'boolean' },
-    children: { control: 'text' }
   },
 };
 
@@ -16,14 +16,22 @@ type Story = StoryObj<typeof Dropdown>;
 
 export const Default: Story = {
   args: {
-    children: 'Default Dropdown',
+    children: [
+      <option key="1">Option 1</option>,
+      <option key="2">Option 2</option>,
+      <option key="3">Option 3</option>
+    ],
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
   args: {
-    children: 'Disabled Dropdown',
+    children: [
+      <option key="1">Option 1</option>,
+      <option key="2">Option 2</option>,
+      <option key="3">Option 3</option>
+    ],
     disabled: true,
   },
 };

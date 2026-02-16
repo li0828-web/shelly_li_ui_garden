@@ -1,23 +1,24 @@
-﻿import React from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { LabelProps } from './Label.types';
 
-const StyledLabel = styled.div<{ disabled?: boolean }>
+const StyledLabel = styled.label<{ disabled?: boolean }>`
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
   color: ${props => props.disabled ? '#999' : '#333'};
-  cursor: ${props => props.disabled ? 'not-allowed' : 'default'};
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  opacity: ${props => props.disabled ? 0.6 : 1};
-;
+  cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
+  margin-bottom: 4px;
+`;
 
 export const Label: React.FC<LabelProps> = ({ 
   children, 
+  htmlFor,
   disabled = false,
   ...props 
 }) => {
   return (
-    <StyledLabel disabled={disabled} {...props}>
+    <StyledLabel htmlFor={htmlFor} disabled={disabled} {...props}>
       {children}
     </StyledLabel>
   );

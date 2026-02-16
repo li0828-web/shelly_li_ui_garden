@@ -1,3 +1,2 @@
-// src/components/Button/index.ts
-export { Button } from "./Button";
-export type { ButtonProps } from "./Button.types";
+export { Dropdown } from "./Dropdown";
+export type { DropdownProps } from "./Dropdown.types";

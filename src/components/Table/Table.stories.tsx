@@ -1,4 +1,4 @@
-﻿import { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { Table } from './Table';
 
 const meta: Meta<typeof Table> = {
@@ -16,14 +16,14 @@ type Story = StoryObj<typeof Table>;
 
 export const Default: Story = {
   args: {
-    children: 'Default Table',
+    children: 'Table content',
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
   args: {
-    children: 'Disabled Table',
+    children: 'Disabled table',
     disabled: true,
   },
 };

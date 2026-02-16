@@ -1,4 +1,4 @@
-﻿import { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import { Label } from './Label';
 
 const meta: Meta<typeof Label> = {
@@ -7,7 +7,8 @@ const meta: Meta<typeof Label> = {
   tags: ['autodocs'],
   argTypes: {
     disabled: { control: 'boolean' },
-    children: { control: 'text' }
+    children: { control: 'text' },
+    htmlFor: { control: 'text' }
   },
 };
 
@@ -16,14 +17,16 @@ type Story = StoryObj<typeof Label>;
 
 export const Default: Story = {
   args: {
-    children: 'Default Label',
+    children: 'Label text',
+    htmlFor: 'input-id',
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
   args: {
-    children: 'Disabled Label',
+    children: 'Disabled label',
+    htmlFor: 'input-id',
     disabled: true,
   },
 };
