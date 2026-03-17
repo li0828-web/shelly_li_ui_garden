@@ -49,33 +49,9 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 A React component library built with Storybook, featuring automated code quality checks using Husky, ESLint, Prettier, and GitHub Actions.
 
-## 📋 Assignment 13 Features
+## 📋 Assignment 13: Code Quality Checks
 
-This project includes code quality checks integrated into the development workflow:
-
-- **Husky** - Pre-commit hooks to ensure code quality
-- **ESLint** - Code linting with React and TypeScript rules
-- **Prettier** - Automatic code formatting
-- **lint-staged** - Run checks only on staged files
-- **GitHub Actions** - CI/CD pipeline for automated checks
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Docker
-- Node.js (v18 or later)
-- Git
-
-### Local Development
-
-# Shelly Li UI Garden - Component Library with Code Quality Checks
-
-A React component library built with Storybook, featuring automated code quality checks using Husky, ESLint, Prettier, and GitHub Actions.
-
-## 📋 Assignment 13 Features
-
-This project includes code quality checks integrated into the development workflow:
+This assignment adds code quality checks to the existing component library from Assignment 12. The implementation includes:
 
 - **Husky** - Pre-commit hooks to ensure code quality
 - **ESLint** - Code linting with React and TypeScript rules
@@ -83,19 +59,44 @@ This project includes code quality checks integrated into the development workfl
 - **lint-staged** - Run checks only on staged files
 - **GitHub Actions** - CI/CD pipeline for automated checks
 
-## 🚀 Getting Started
+## Complete Setup Instructions
 
 ### Prerequisites
 
 - Docker
 - Node.js (v18 or later)
 - Git
+- GitHub account
 
-### Local Development
-
-1. Clone the repository:
+### Step 1: Clone and Install Dependencies
 
 ```bash
+# Clone the repository
 git clone https://github.com/li0828-web/shelly_li_ui_garden.git
 cd shelly_li_ui_garden
+
+# Install all dependencies including Husky, lint-staged, and Prettier
+npm install
+
+# The package.json already includes:
+# - husky
+# - lint-staged
+# - prettier
+# - eslint with react-app config
+
+Step 2: Initialize Husky and Configure Pre-commit Hook
+
+Step 3: Configure ESLint and Prettier
+
+Step 4: Test the Pre-commit Hook
+
+Step 5: Set Up GitHub Actions
+
+Step 6: Update Docker Configuration for Port 8018
+
+Step 7: Build and Run Docker Container
+
+Step 8: Push Everything to GitHub
+
+Step 9: Verify GitHub Actions
 ```
