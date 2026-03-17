@@ -44,3 +44,58 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+# Shelly Li UI Garden - Component Library with Code Quality Checks
+
+A React component library built with Storybook, featuring automated code quality checks using Husky, ESLint, Prettier, and GitHub Actions.
+
+## 📋 Assignment 13 Features
+
+This project includes code quality checks integrated into the development workflow:
+
+- **Husky** - Pre-commit hooks to ensure code quality
+- **ESLint** - Code linting with React and TypeScript rules
+- **Prettier** - Automatic code formatting
+- **lint-staged** - Run checks only on staged files
+- **GitHub Actions** - CI/CD pipeline for automated checks
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Docker
+- Node.js (v18 or later)
+- Git
+
+### Local Development
+
+# Shelly Li UI Garden - Component Library with Code Quality Checks
+
+A React component library built with Storybook, featuring automated code quality checks using Husky, ESLint, Prettier, and GitHub Actions.
+
+## 📋 Assignment 13 Features
+
+This project includes code quality checks integrated into the development workflow:
+
+- **Husky** - Pre-commit hooks to ensure code quality
+- **ESLint** - Code linting with React and TypeScript rules
+- **Prettier** - Automatic code formatting
+- **lint-staged** - Run checks only on staged files
+- **GitHub Actions** - CI/CD pipeline for automated checks
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Docker
+- Node.js (v18 or later)
+- Git
+
+### Local Development
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/li0828-web/shelly_li_ui_garden.git
+cd shelly_li_ui_garden
+```
