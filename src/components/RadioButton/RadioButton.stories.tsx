@@ -10,7 +10,7 @@ const meta: Meta<typeof RadioButton> = {
     children: { control: 'text' },
     name: { control: 'text' },
     value: { control: 'text' },
-    checked: { control: 'boolean' }
+    checked: { control: 'boolean' },
   },
 };
 

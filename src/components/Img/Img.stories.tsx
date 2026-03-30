@@ -8,7 +8,7 @@ const meta: Meta<typeof Img> = {
   argTypes: {
     disabled: { control: 'boolean' },
     src: { control: 'text' },
-    alt: { control: 'text' }
+    alt: { control: 'text' },
   },
 };
 

@@ -1,4 +1,4 @@
-﻿export interface TableHeaderProps {
+export interface TableHeaderProps {
   children?: React.ReactNode;
   disabled?: boolean;
   [key: string]: any;

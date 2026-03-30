@@ -7,7 +7,7 @@ const meta: Meta<typeof TableCell> = {
   tags: ['autodocs'],
   argTypes: {
     disabled: { control: 'boolean' },
-    children: { control: 'text' }
+    children: { control: 'text' },
   },
 };
 

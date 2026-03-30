@@ -7,7 +7,7 @@ const meta: Meta<typeof TableHeader> = {
   tags: ['autodocs'],
   argTypes: {
     disabled: { control: 'boolean' },
-    children: { control: 'text' }
+    children: { control: 'text' },
   },
 };
 

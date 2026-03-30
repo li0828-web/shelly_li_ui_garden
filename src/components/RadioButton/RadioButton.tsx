@@ -6,22 +6,22 @@ const RadioContainer = styled.label<{ disabled?: boolean }>`
   display: flex;
   align-items: center;
   gap: 8px;
-  cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
-  opacity: ${props => props.disabled ? 0.6 : 1};
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
+  opacity: ${(props) => (props.disabled ? 0.6 : 1)};
 `;
 
 const StyledRadio = styled.input.attrs({ type: 'radio' })<{ disabled?: boolean }>`
-  cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
 `;
 
-export const RadioButton: React.FC<RadioButtonProps> = ({ 
-  children, 
+export const RadioButton: React.FC<RadioButtonProps> = ({
+  children,
   name,
   value,
   checked,
   disabled = false,
   onChange,
-  ...props 
+  ...props
 }) => {
   return (
     <RadioContainer disabled={disabled}>

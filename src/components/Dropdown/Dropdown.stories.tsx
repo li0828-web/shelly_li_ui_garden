@@ -19,7 +19,7 @@ export const Default: Story = {
     children: [
       <option key="1">Option 1</option>,
       <option key="2">Option 2</option>,
-      <option key="3">Option 3</option>
+      <option key="3">Option 3</option>,
     ],
     disabled: false,
   },
@@ -30,7 +30,7 @@ export const Disabled: Story = {
     children: [
       <option key="1">Option 1</option>,
       <option key="2">Option 2</option>,
-      <option key="3">Option 3</option>
+      <option key="3">Option 3</option>,
     ],
     disabled: true,
   },

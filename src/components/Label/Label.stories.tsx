@@ -8,7 +8,7 @@ const meta: Meta<typeof Label> = {
   argTypes: {
     disabled: { control: 'boolean' },
     children: { control: 'text' },
-    htmlFor: { control: 'text' }
+    htmlFor: { control: 'text' },
   },
 };
 
